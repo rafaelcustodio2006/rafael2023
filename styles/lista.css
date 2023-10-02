@@ -1,0 +1,52 @@
+/* Estilo da lista de dados */
+
+.lista {
+    margin: 20px;
+    background-color: rgb(199, 133, 48);
+    border: 1px solid #fff6f6;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 600px;
+    overflow-y: auto;   
+}
+
+.titulo_lista {
+    margin-top: 0;
+    font-weight: bold; /* Alterei para "bold" para tornar o texto mais visível */
+    font-size: 20px; /* Tamanho da fonte maior */
+}
+
+/* Estilo da tabela */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 97%; /* Limitar largura da tabela */
+    
+}
+
+th, td {
+    text-align: left;
+    padding: 5px; /* Aumentei o espaço ao redor do conteúdo da célula */
+    border: 2px solid rgb(6, 14, 59);
+    font-size: 14px; /* Tamanho da fonte maior */
+}
+
+th {
+    background-color: #404549;
+    color: #dce0e4;
+}
+
+tr{
+    background-color: #8c8b94;
+}
+tr:nth-child(even) {
+    background-color: #404440;
+}
+
+@media screen and (max-width: 1024) {
+    .lista {
+        max-height: calc(100vh - 40px); /* 40px para considerar a margem superior e inferior */
+        overflow: auto; /* Adicionar rolagem vertical quando necessário */
+        max-height: 300px; /* Defina uma altura máxima para a lista */  
+    }
+}
